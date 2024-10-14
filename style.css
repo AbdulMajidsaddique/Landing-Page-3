@@ -55,6 +55,8 @@ html,body{
     width: 100%;
     height: calc(100% - 90px);
     display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 #left{
     width: 36%;
@@ -64,12 +66,12 @@ html,body{
 #right{
     width: 36%;
     height: 100%;
-    background-color: yellow;
+    padding: 200px 110px;
 }
 #center{
-    width: 28%;
+    width: 26%;
     height: 100%;
-    background-color: orange;
+    padding-top: 60px;
 }
 #left h1{
     font-size: 50px;
@@ -98,4 +100,49 @@ html,body{
 }
 #left button i{
     margin-right: 10px;
+}
+#center-bg{
+    background-image: url('https://outloudvisuals.com/wp-content/uploads/2019/10/coke_bg_port-min-scaled.jpeg');
+    background-size: 350%;
+    background-position: 30% 40%;
+    height: 93%;
+    width: 100%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    filter: blur(2px);
+}
+#content>img{
+    height: 100%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%,0);
+}
+#right-elem{
+    width: 250px;
+}
+#elem1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    opacity: 0.6;
+}
+#elem1 h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+#elem1 i{
+    font-size: 22px;
+}
+#elem2 h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+#elem2 p{
+    font-size: 12px;
+    width: 80%;
+    opacity: 0.6;
 }
